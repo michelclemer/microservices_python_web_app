@@ -23,5 +23,5 @@ services:
     volumes:
       - .dbdata:/var/run/postgresql
     ports:
-      - 5435:5435
+      - "5435:5432"
 

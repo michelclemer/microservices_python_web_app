@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DataExportManager">
@@ -27,15 +27,22 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="2d965a76-7df7-452f-9917-60602c7df592">
-      <console name="Connection" type="STANDARD" schema="information_schema" session="Main" />
+    <connection id="5b373084-c0d2-420a-ad12-e2aa2e4f7f31">
+      <console name="Connection" type="STANDARD" schema="admin" session="Main"><![CDATA[insert into products_user(id) values(3);]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="2d965a76-7df7-452f-9917-60602c7df592" />
+    <connection id="5b373084-c0d2-420a-ad12-e2aa2e4f7f31" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="5b373084-c0d2-420a-ad12-e2aa2e4f7f31" dataset="admin.products_user" active-filter-id="986c5b75-35b3-4957-b81b-52d341d0ad2e">
+      <filter id="986c5b75-35b3-4957-b81b-52d341d0ad2e" name="0" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="&gt;" value="0" active="true" />
+      </filter>
+    </filter-actions>
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -66,23 +73,23 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="2d965a76-7df7-452f-9917-60602c7df592" active="true" signed="false">
+      <connection id="5b373084-c0d2-420a-ad12-e2aa2e4f7f31" active="true" signed="false">
         <database>
           <name value="Connection" />
           <description value="" />
-          <database-type value="POSTGRES" />
+          <database-type value="MYSQL" />
           <config-type value="BASIC" />
-          <database-version value="14.2" />
+          <database-version value="5.5" />
           <driver-source value="BUILTIN" />
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
           <host value="localhost" />
-          <port value="5432" />
+          <port value="3306" />
           <database value="admin" />
           <type value="USER_PASSWORD" />
-          <user value="postgres" />
-          <deprecated-pwd value="cG9zdGdyZXM=" />
+          <user value="admin" />
+          <deprecated-pwd value="YWRtaW4=" />
         </database>
         <properties>
           <auto-commit value="false" />

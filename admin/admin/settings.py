@@ -79,13 +79,14 @@ WSGI_APPLICATION = "admin.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "admin",
-        "USER": "root",
-        "PASSWORD": "127001",
-        "HOST": "localhost",
+        "NAME": "main",
+        "USER": "newuser",
+        "PASSWORD": "password",
+        "HOST": "db",
         "PORT": "3306",
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

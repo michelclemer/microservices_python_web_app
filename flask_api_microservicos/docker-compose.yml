@@ -1,11 +1,11 @@
 version: '3.7'
 services:
-  backend:
+  backend-api:
     build: 
       context: .
       dockerfile: Dockerfile
     ports:
-      - 8001:5000
+      - 8002:5000
     volumes:
       - .:/app
     depends_on:
@@ -21,5 +21,5 @@ services:
     volumes:
       - .dbdata:/var/lib/mysql
     ports:
-      - 33067:3306
+      - 33068:3306
 
